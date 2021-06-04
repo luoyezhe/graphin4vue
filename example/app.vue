@@ -2,7 +2,7 @@
 /* eslint-disable */
 import { reactive, toRefs, ref } from 'vue'
 import { useToggle } from '@vueuse/core'
-import { Statistic } from '@graphin-components'
+import { } from '@graphin-components'
 import {
   ZoomInOutlined,
   ZoomOutOutlined,
@@ -223,7 +223,6 @@ export default {
         modes={modes}
         fitViewPadding={() => [10, 20]}
       >
-        <Statistic />
       </Graphin>
       <div className="test-area">
         123
@@ -241,7 +240,7 @@ export default {
     //   test
     // }
   },
-  components: { Statistic }
+  components: { }
 }
 </script>
 
