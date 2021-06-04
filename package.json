@@ -1,0 +1,64 @@
+{
+  "name": "graph-basic",
+  "version": "0.1.0",
+  "private": true,
+  "main": "dist/",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib --name graph-basic ./src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "bugs": {
+    "url": ""
+  },
+  "homepage": "",
+  "keywords": [
+    "vue",
+    "graph-basic"
+  ],
+  "dependencies": {
+    "@ant-design/icons-vue": "^6.0.1",
+    "@antv/g-canvas": "^0.5.10",
+    "@antv/g6": "^4.3.2",
+    "@antv/graphin-icons": "^1.0.0",
+    "@antv/util": "^2.0.13",
+    "@vueuse/core": "^4.11.1",
+    "core-js": "^3.6.5",
+    "lodash-es": "^4.17.21",
+    "uglifyjs-webpack-plugin": "^2.2.0",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.0",
+    "@vue/cli-plugin-eslint": "~4.5.0",
+    "@vue/cli-service": "~4.5.0",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-standard": "^5.1.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.7.2",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "eslint-plugin-vue": "^7.0.0",
+    "less": "^4.1.1",
+    "less-loader": "7.x",
+    "lint-staged": "^9.5.0",
+    "style-resources-loader": "^1.4.1",
+    "vue-cli-plugin-style-resources-loader": "^0.1.5"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "lint-staged": {
+    "*.{js,jsx,vue}": [
+      "vue-cli-service lint",
+      "git add"
+    ]
+  }
+}
